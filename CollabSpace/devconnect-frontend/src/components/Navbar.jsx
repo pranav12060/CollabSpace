@@ -23,10 +23,10 @@ export default function Navbar() {
           <div className="hidden md:flex gap-6 items-center">
             {user ? (
               <>
-                <span className="text-blue-100 text-sm">Welcome, {user.name}!</span>
+                <span className="text-black-100 text-sm">Welcome, {user.name}!</span>
                 <Link 
                   to="/profile" 
-                  className="hover:text-blue-200 transition-colors duration-200 text-lg font-medium px-3 py-2 rounded-md hover:bg-white/10"
+                  className="text-white hover:text-blue-200 transition-colors duration-200 text-lg font-medium px-3 py-2 rounded-md hover:bg-white/20"
                 >
                   Profile
                 </Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
               <>
                 <Link 
                   to="/login" 
-                  className="hover:text-blue-200 transition-colors duration-200 text-lg font-medium px-3 py-2 rounded-md hover:bg-white/10"
+                  className="text-white transition-colors duration-200 text-lg font-medium px-3 py-2 rounded-md hover:bg-white/10"
                 >
                   Login
                 </Link>

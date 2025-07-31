@@ -13,7 +13,7 @@ export default function App() {
       <Router>
         <div className="w-full min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
           <Navbar />
-          <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 max-w-7xl">
+          <div className="w-full fixed px-8 pt-20 pb-12 flex flex-col items-center text-gray-900 bg-white/80 rounded-xl shadow-lg">
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/login" element={<Login />} />
@@ -21,7 +21,7 @@ export default function App() {
               <Route path="/project/:id" element={<ProjectDetails />} />
               <Route path="/profile" element={<Profile />} />
             </Routes>
-          </main>
+          </div>
         </div>
       </Router>
     </AuthProvider>
