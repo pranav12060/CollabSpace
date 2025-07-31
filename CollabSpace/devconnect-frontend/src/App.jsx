@@ -11,9 +11,9 @@ export default function App() {
   return (
     <AuthProvider>
       <Router>
-      <div className="w-full min-h-screen bg-gradient-to-br from-blue-50 to-blue-200">
-        <Navbar />
-        <div className="w-full px-0 pt-24 pb-12 text-left">
+        <div className="w-full min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+          <Navbar />
+          <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 max-w-7xl">
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/login" element={<Login />} />
@@ -21,7 +21,7 @@ export default function App() {
               <Route path="/project/:id" element={<ProjectDetails />} />
               <Route path="/profile" element={<Profile />} />
             </Routes>
-          </div>
+          </main>
         </div>
       </Router>
     </AuthProvider>
